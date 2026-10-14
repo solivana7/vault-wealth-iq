@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/legal/(.*)", "destination": "/legal/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/redfin.js": {
+      "maxDuration": 60
+    },
+    "api/payment/webhook.js": {
+      "maxDuration": 30
+    }
+  }
+}

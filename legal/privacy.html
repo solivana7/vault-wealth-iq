@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — VAULT Wealth Intelligence</title>
+<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #06060f;
+  --ink2: #0c0c1a;
+  --ink3: #111124;
+  --wire: rgba(255,255,255,0.06);
+  --wire2: rgba(255,255,255,0.11);
+  --t1: #f1f0ff;
+  --t2: #a8a8c8;
+  --t3: #8585a8;
+  --indigo: #5b52f5;
+  --indigo3: #a89fff;
+  --emerald: #10b981;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--ink);
+  color: var(--t1);
+  line-height: 1.7;
+  padding: 60px 20px;
+}
+.container { max-width: 800px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 60px; padding-bottom: 40px; border-bottom: 1px solid var(--wire); }
+.logo {
+  width: 60px; height: 60px;
+  background: linear-gradient(135deg, var(--indigo), #00d4b4);
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; margin: 0 auto 20px;
+}
+h1 { font-family: 'Syne', sans-serif; font-size: 36px; margin-bottom: 8px; }
+.subtitle { color: var(--t3); font-size: 14px; }
+
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  color: var(--indigo3);
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--wire);
+}
+h3 { font-size: 16px; color: var(--t1); margin: 24px 0 12px; font-weight: 700; }
+p { margin-bottom: 16px; color: var(--t2); }
+ul { margin: 16px 0; padding-left: 24px; }
+li { margin-bottom: 8px; color: var(--t2); }
+
+.privacy-highlight {
+  background: rgba(16,185,129,0.08);
+  border: 1px solid rgba(16,185,129,0.25);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.privacy-highlight p { margin-bottom: 0; color: var(--t1); }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--wire);
+}
+.data-table th {
+  color: var(--t3);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.data-table td {
+  color: var(--t2);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--indigo3);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.back-link:hover { color: #fff; }
+
+footer {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--wire);
+  text-align: center;
+  color: var(--t3);
+  font-size: 12px;
+}
+footer a { color: var(--indigo3); text-decoration: none; }
+
+@media (max-width: 600px) {
+  body { padding: 40px 16px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 18px; }
+  .data-table { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="/" class="back-link">← Back to VAULT</a>
+  
+  <header>
+    <div class="logo">⬡</div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">How VAULT protects and handles your data</p>
+    <p style="color: var(--t3); font-size: 12px; margin-top: 16px;">Last Updated: April 5, 2026</p>
+  </header>
+
+  <div class="privacy-highlight">
+    <p><strong>🔒 Privacy First:</strong> Your financial data is yours. We minimize data collection, encrypt everything, and never sell your information to third parties. Most of your data stays in your browser's localStorage — not our servers.</p>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+  
+  <h3>1.1 Account Information (Stored on Our Servers)</h3>
+  <table class="data-table">
+    <tr>
+      <th>Data</th>
+      <th>Purpose</th>
+      <th>Storage</th>
+    </tr>
+    <tr>
+      <td>Email address</td>
+      <td>Authentication, account recovery</td>
+      <td>Railway Postgres (encrypted)</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Personalization</td>
+      <td>Railway Postgres (encrypted)</td>
+    </tr>
+    <tr>
+      <td>Password hash</td>
+      <td>Authentication</td>
+      <td>Railway Postgres (scrypt + salt)</td>
+    </tr>
+    <tr>
+      <td>Trial/payment status</td>
+      <td>Subscription management</td>
+      <td>Railway Postgres</td>
+    </tr>
+  </table>
+
+  <h3>1.2 Financial Data (Stored Locally in Your Browser)</h3>
+  <p>Your sensitive financial information — account balances, transactions, assets, debts, and investment details — is stored in your browser's <strong>localStorage</strong>. This means:</p>
+  <ul>
+    <li>✅ Your financial data is stored locally, not in our database</li>
+    <li>✅ You maintain full control</li>
+    <li>✅ Data persists across sessions</li>
+    <li>⚠️ AI Advisor requests are relayed through our servers to Anthropic's Claude API (see 1.3) — don't include anything you don't want processed there</li>
+    <li>⚠️ Clearing browser data will delete your financial records (export regularly!)</li>
+  </ul>
+
+  <h3>1.3 AI Advisor Interactions</h3>
+  <p>When you use the AI Advisor feature, your financial summary is sent to Anthropic's Claude API to generate personalized recommendations. We do not store these conversations. Anthropic's privacy policy applies to API usage.</p>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To provide and maintain the Service</li>
+    <li>To process payments and manage subscriptions</li>
+    <li>To send important account notifications</li>
+    <li>To improve our AI recommendations</li>
+    <li>To detect and prevent fraud or abuse</li>
+  </ul>
+
+  <h2>3. Data We Do NOT Collect</h2>
+  <div class="privacy-highlight">
+    <ul style="margin: 0;">
+      <li>❌ Bank account credentials (we never ask for passwords)</li>
+      <li>❌ Social Security Numbers</li>
+      <li>❌ Full credit card numbers (handled by Stripe)</li>
+      <li>❌ Precise location data</li>
+      <li>❌ Browsing history outside our app</li>
+      <li>❌ Third-party advertising IDs</li>
+    </ul>
+  </div>
+
+  <h2>4. Third-Party Services</h2>
+  <table class="data-table">
+    <tr>
+      <th>Service</th>
+      <th>Purpose</th>
+      <th>Data Shared</th>
+    </tr>
+    <tr>
+      <td>Stripe</td>
+      <td>Payment processing</td>
+      <td>Payment method (tokenized)</td>
+    </tr>
+    <tr>
+      <td>Anthropic (Claude)</td>
+      <td>AI financial advisor</td>
+      <td>Financial summary (anonymized)</td>
+    </tr>
+    <tr>
+      <td>Redfin</td>
+      <td>Property valuations</td>
+      <td>Property address only</td>
+    </tr>
+    <tr>
+      <td>Railway</td>
+      <td>Database hosting</td>
+      <td>Account info (encrypted)</td>
+    </tr>
+  </table>
+
+  <h2>5. Your Rights (GDPR/CCPA)</h2>
+  <p>Depending on your location, you have the right to:</p>
+  <ul>
+    <li><strong>Access:</strong> Request a copy of your personal data</li>
+    <li><strong>Correction:</strong> Update inaccurate information</li>
+    <li><strong>Deletion:</strong> Delete your account and associated data</li>
+    <li><strong>Portability:</strong> Export your data in a usable format</li>
+    <li><strong>Opt-out:</strong> Stop receiving marketing communications</li>
+  </ul>
+
+  <h2>6. Data Security</h2>
+  <ul>
+    <li>256-bit SSL/TLS encryption for all data in transit</li>
+    <li>Passwords hashed with scrypt (computationally expensive)</li>
+    <li>Regular security audits and dependency updates</li>
+    <li>No plaintext storage of sensitive information</li>
+  </ul>
+
+  <h2>7. Cookies and Tracking</h2>
+  <p>We use minimal cookies:</p>
+  <ul>
+    <li><strong>Essential cookies:</strong> Authentication session</li>
+    <li><strong>Preference cookies:</strong> UI settings (if applicable)</li>
+  </ul>
+  <p>We do not use tracking cookies for advertising.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>VAULT is not intended for users under 18. We do not knowingly collect data from children.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy. Significant changes will be notified via email or in-app notice.</p>
+
+  <h2>10. Contact Us</h2>
+  <p>Privacy-related questions:<br>
+  Email: privacy@vaultwealthiq.com<br>
+  Data Protection Officer: VAULT Legal Team</p>
+
+  <footer>
+    <p>© 2026 VAULT Wealth Intelligence. Your privacy is our priority.</p>
+    <p><a href="/legal/terms.html">Terms of Service</a> · <a href="/">Back to App</a></p>
+  </footer>
+</div>
+</body>
+</html>
